@@ -1,0 +1,85 @@
+*{
+    margin:0;
+    padding:0;
+}
+body{
+    color:white;
+    font-size:1.4rem;
+    height:100vh;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    background-image:linear-gradient(to right,blue,red);
+}
+.container{
+    border:3px solid blue;
+    min-width:500px;
+    max-width:500px;
+    border-left-color: magenta;
+}
+
+.container h1{
+    text-align:center;
+    padding:1rem;
+    
+}
+.question{
+    
+    padding:1.2rem;
+    margin:1.2rem;
+}
+.ask{
+    font-size: 1.6rem;
+    margin-bottom: 1.6rem;
+}
+.option{
+    overflow: auto;
+    text-overflow: clip;
+    border:none;
+    margin:1.2rem;
+    background-color: rgb(52, 47, 121);
+    padding:0.4rem;
+    border-radius:5px;
+    transition:all 1s ease;
+}
+.option:hover{
+    background-color: lavender;
+    color:rgb(52, 47, 121);
+}
+
+.correct{
+    background-color: rgb(26, 193, 26);
+} 
+.wrong{
+    background-color: orangered;
+}
+.next{
+    
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1.2rem;
+    margin-top:0;
+}
+.btn{
+    text-align: center;
+    min-width: 200px;
+    padding:0 2rem;
+    font-size: 1.4rem;
+    border:none;
+    background-color: moccasin;
+    color:black;
+    transition:all 0.3s;
+}
+
+.btn:hover{
+    color:white;
+    background-color: rgb(52, 47, 121);
+}
+.btnhide{
+    display:none;
+}
+.selected {
+    pointer-events: none; /* Disable pointer events (hover) */
+    /* You can add other styles as needed to indicate the option is selected */
+  }
